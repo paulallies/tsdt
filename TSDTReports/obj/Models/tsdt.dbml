@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="TSDT" Class="tsdtDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=zarfntintradev1;Initial Catalog=TSDT;Persist Security Info=True;User ID=TSDTUser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TSDTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Project" Member="tbl_Projects">
+    <Type Name="tbl_Project">
+      <Column Name="Project_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Project_Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SAP_Number" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WBS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Project_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Status_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Project_tbl_Project_Owner" Member="tbl_Project_Owners" ThisKey="Project_ID" OtherKey="Project_ID" Type="tbl_Project_Owner" />
+      <Association Name="tbl_Project_tbl_Resource" Member="tbl_Resources" ThisKey="Project_ID" OtherKey="Project_ID" Type="tbl_Resource" />
+      <Association Name="tbl_Status_tbl_Project" Member="tbl_Status" ThisKey="Status_ID" OtherKey="Status_ID" Type="tbl_Status" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_User_Role" Member="tbl_User_Roles">
+    <Type Name="tbl_User_Role">
+      <Column Name="User_Role" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="User_Role_Descr" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="tbl_User_Role_tbl_User" Member="tbl_Users" ThisKey="User_Role" OtherKey="User_Role" Type="tbl_User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Status" Member="tbl_Status">
+    <Type Name="tbl_Status">
+      <Column Name="Status_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_Status_tbl_Project" Member="tbl_Projects" ThisKey="Status_ID" OtherKey="Status_ID" Type="tbl_Project" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TimeSheet" Member="tbl_TimeSheets">
+    <Type Name="tbl_TimeSheet">
+      <Column Name="Resource_ID" Type="System.Int32" DbType="Int" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="Hours" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Association Name="tbl_Resource_tbl_TimeSheet" Member="tbl_Resource" ThisKey="Resource_ID" OtherKey="Resource_ID" Type="tbl_Resource" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Project_Owner" Member="tbl_Project_Owners">
+    <Type Name="tbl_Project_Owner">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="User_CAI" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Project_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="tbl_Project_tbl_Project_Owner" Member="tbl_Project" ThisKey="Project_ID" OtherKey="Project_ID" Type="tbl_Project" IsForeignKey="true" />
+      <Association Name="tbl_User_tbl_Project_Owner" Member="tbl_User" ThisKey="User_CAI" OtherKey="User_CAI" Type="tbl_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Resource" Member="tbl_Resources">
+    <Type Name="tbl_Resource">
+      <Column Name="Resource_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Project_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="User_CAI" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Hide" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Resource_tbl_TimeSheet" Member="tbl_TimeSheets" ThisKey="Resource_ID" OtherKey="Resource_ID" Type="tbl_TimeSheet" />
+      <Association Name="tbl_Project_tbl_Resource" Member="tbl_Project" ThisKey="Project_ID" OtherKey="Project_ID" Type="tbl_Project" IsForeignKey="true" />
+      <Association Name="tbl_User_tbl_Resource" Member="tbl_User" ThisKey="User_CAI" OtherKey="User_CAI" Type="tbl_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_User" Member="tbl_Users">
+    <Type Name="tbl_User">
+      <Column Name="User_CAI" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="User_FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="User_LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="User_Role" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EmployeeNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CompanyName" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="tbl_User_tbl_Project_Owner" Member="tbl_Project_Owners" ThisKey="User_CAI" OtherKey="User_CAI" Type="tbl_Project_Owner" />
+      <Association Name="tbl_User_tbl_Resource" Member="tbl_Resources" ThisKey="User_CAI" OtherKey="User_CAI" Type="tbl_Resource" />
+      <Association Name="tbl_User_Role_tbl_User" Member="tbl_User_Role" ThisKey="User_Role" OtherKey="User_Role" Type="tbl_User_Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

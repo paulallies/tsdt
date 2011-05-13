@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSDTReports", "TSDTReports\TSDTReports.csproj", "{32B47F26-A942-4CC6-81F9-0BDC10F6D459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSDTReports.Tests", "TSDTReports.Tests\TSDTReports.Tests.csproj", "{9A828DA6-427A-44B9-802D-D15BEF382E24}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://zarfntintradev1:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TSDTReports\\TSDTReports.csproj
+		SccProjectName1 = TSDTReports
+		SccLocalPath1 = TSDTReports
+		SccProjectUniqueName2 = TSDTReports.Tests\\TSDTReports.Tests.csproj
+		SccProjectName2 = TSDTReports.Tests
+		SccLocalPath2 = TSDTReports.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32B47F26-A942-4CC6-81F9-0BDC10F6D459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B47F26-A942-4CC6-81F9-0BDC10F6D459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B47F26-A942-4CC6-81F9-0BDC10F6D459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B47F26-A942-4CC6-81F9-0BDC10F6D459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A828DA6-427A-44B9-802D-D15BEF382E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A828DA6-427A-44B9-802D-D15BEF382E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A828DA6-427A-44B9-802D-D15BEF382E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A828DA6-427A-44B9-802D-D15BEF382E24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

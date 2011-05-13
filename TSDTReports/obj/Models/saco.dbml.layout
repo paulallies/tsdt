@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="saco">
+  <DataContextMoniker Name="/sacoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="66941248-ee5b-4d13-9976-f3b59505b8c8" absoluteBounds="3.625, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sacoDataContext/Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80b5489e-96bf-4350-b7f6-689fec0c2a4a" absoluteBounds="3.6399999999999997, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97b4e725-895a-4dee-9d60-77d2435c768e" absoluteBounds="0.5, 0.5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/sacoDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fea9304-2d80-47f4-8851-a20abd307ad0" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 1.91429768880208); (2.5 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sacoDataContext/Company/Company_Employee" />
+      <nodes>
+        <classShapeMoniker Id="66941248-ee5b-4d13-9976-f3b59505b8c8" />
+        <classShapeMoniker Id="97b4e725-895a-4dee-9d60-77d2435c768e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ba06af82-a8db-4cb8-9de1-c4e1d83c7ed1" absoluteBounds="3.625, 3.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/sacoDataContext/ClockHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ed3d478-979f-489c-9c0a-b95f5882f1c6" absoluteBounds="3.6399999999999997, 4.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 4.60659912109375); (3.625 : 4.60659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sacoDataContext/Employee/Employee_ClockHistory" />
+      <nodes>
+        <classShapeMoniker Id="97b4e725-895a-4dee-9d60-77d2435c768e" />
+        <classShapeMoniker Id="ba06af82-a8db-4cb8-9de1-c4e1d83c7ed1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5b02a234-3f85-43d5-8789-d155727d3878" absoluteBounds="6.5, 2.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/sacoDataContext/Reader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59cbbdde-22ed-4e3e-bb3f-70f0d878e252" absoluteBounds="6.515, 2.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 4.60659912109375); (5.625 : 4.60659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sacoDataContext/Reader/Reader_ClockHistory" />
+      <nodes>
+        <classShapeMoniker Id="5b02a234-3f85-43d5-8789-d155727d3878" />
+        <classShapeMoniker Id="ba06af82-a8db-4cb8-9de1-c4e1d83c7ed1" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

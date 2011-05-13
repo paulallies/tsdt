@@ -1,0 +1,139 @@
+﻿.pagerBox
+{
+    background: #F6F6F6 none repeat scroll 0 0;
+    border: 1px solid #E6E6E6;
+    clear: both;
+    display: block;
+    margin: 10px 0;
+    padding: 2px 0.7em;
+    vertical-align: middle !important;
+    text-align: right;
+    height:20px;
+}
+
+img
+{
+    border-bottom: 0px;
+    border-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    outline-style: none;
+    outline-color: invert;
+    padding-left: 0px;
+    outline-width: 0px;
+    padding-right: 0px;
+    background: none transparent scroll repeat 0% 0%;
+    font-size: 100%;
+    vertical-align: baseline;
+    border-top: 0px;
+    border-right: 0px;
+    padding-top: 0px;
+}
+IMG.ico_first
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_prev
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_next
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_last
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_first
+{
+    background-position: 0px -15px;
+}
+IMG.ico_prev
+{
+    background-position: -15px -15px;
+}
+IMG.ico_next
+{
+    background-position: -30px -15px;
+}
+IMG.ico_last
+{
+    background-position: -45px -15px;
+}
+IMG.ico_first:hover
+{
+    background-position: 0px 0px;
+}
+IMG.ico_prev:hover
+{
+    background-position: -15px 0px;
+}
+IMG.ico_next:hover
+{
+    background-position: -30px 0px;
+}
+IMG.ico_last:hover
+{
+    background-position: -45px 0px;
+}
+
+img.ico_first, img.ico_prev, img.ico_next, img.ico_last
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    background-repeat: no-repeat;
+    display: inline;
+    height: 15px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+    width: 15px;
+}
+img, a
+{
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+    padding: 0;
+}
+.m
+{
+    vertical-align: middle !important;
+}
+
+.fr
+{
+    float: right;
+}
+
+.nw
+{
+    white-space: nowrap !important;
+}

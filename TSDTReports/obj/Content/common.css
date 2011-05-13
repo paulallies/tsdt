@@ -1,0 +1,483 @@
+/* Common.css version 1.15*/ 
+/* This style sheet should not be edited. 
+Any changes that need to be made should be made in the custom.css */
+
+/*-------General Styles--------*/
+
+a:link, a:active, a:hover, a:focus {color: #0050aa;}
+
+a:visited {color: #800080;}
+
+body {
+	background-color: #fff; 
+	font-family: verdana, sans-serif; 
+	font-size: 80%;
+	margin: 0 10px;
+	/*text-align: center;*/
+}
+
+#columnLeft {
+	float: left;
+	margin-bottom: 15px;
+}
+
+#columnRight {
+	float: right;
+	margin-bottom: 15px;
+}
+
+#content {
+	background-color: #fff; 
+	_height: 1%;
+	margin: 0;
+	padding: 12px 0;
+}
+	
+#content li{ margin-top: .3em; }
+
+.hidden { display: none; }
+
+#home .homeHide {display: none;}
+
+h1 { margin: 0;	}
+
+h2, h3 { 
+	margin: 0;
+	padding: 0 0 .6em 0;
+}
+
+h4, h5, h6 { 
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 .6em 0;
+}
+
+.largeObject {
+	overflow: auto;
+	width: 100%; 
+}
+
+#momentum { 	
+	padding: 0;
+  	position: relative;
+	text-align:left;
+}
+	
+#momentum img { 	
+  	position: absolute;
+  	z-index: 0;
+}
+
+p {	margin-top: 0; }
+
+#pageConstraints {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 700px;
+	position: relative;
+	text-align: left;
+}
+
+#popupPage #header { height: 90px;}
+#popupPage #siteNameContainer { _top:0; }
+#popupPage #pageConstraints {width: 100%; min-width: 200px;}
+#popupPage #hallmark {margin: 18px 20px;}
+
+#popupBand {
+	background: #ebebeb;
+	border-bottom: 1px solid #aaafb4;
+	color: #0050aa;
+	font-size: .9em;
+	height: 1.8em;
+	margin: 0 -10px;
+	position: relative;
+}
+
+#popupBand img {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: .2em;
+}
+
+#popupBand span {
+	position: absolute;
+	right: 30px;
+	top: .3em;
+}
+
+
+.skipNav {
+ 	position: absolute;
+ 	left: -1000em;
+}
+/*
+table {	font-size: 1em; }
+
+-------End General Styles--------*/
+
+
+
+/*-------New Header Styles--------*/
+
+#globalLinks{
+	background-color: #009DD9;
+	color: #fff;
+	text-align: right;
+	list-style: none; 
+	margin: 0;
+	padding: 2px 0 3px 0;
+	white-space: nowrap;
+	width: 100%;
+}
+
+#globalLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#globalLinks a:hover {
+	text-decoration: underline;
+}
+
+#globalLinks li{
+	border-right: 1px solid #fff;
+	display:inline;
+	padding: 0 8px 0 7px;
+}
+
+#globalLinks li.last {
+	border-right: none;
+	padding-right: 4px;
+}
+
+#hallmark {	float: right; }
+
+#header {
+	clear: both;
+	font-size: 0.8em;
+	height: 121px;
+	width: 100%;
+}
+
+#siteNameContainer { 
+	height: 104px; 
+	position: absolute; 
+	_top:18px; 
+	left: 0; 
+	width: 299px; 
+	z-index: 1;
+}
+ 
+#siteNamePositioner { 
+	height: 50px;
+	position: absolute; 
+	top: 50%;
+}
+ 
+#siteName { 
+	position: relative; 
+	top: -50% ;
+	left: 10px;
+}
+ 
+#siteSpecific {
+	height: 42px;
+	margin: 0 0 0 299px;
+	padding-bottom: 0;
+	position: relative; 
+	z-index: 1;
+}
+
+#siteSpecific a {
+	color: #0050aa;
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+}
+
+#siteSpecific a.currentPage, 
+#siteSpecific a:visited.currentPage {
+	font-weight: bold;
+	cursor: text;
+	text-decoration: none;
+}
+
+#siteSpecific a:hover,
+#siteSpecific a:active, 
+#siteSpecific a:focus {	text-decoration: underline; }
+
+#siteSpecific ul{
+	border-bottom: 1px solid #ddd;
+	list-style: none; 
+	float: right;
+	margin: 0;
+	padding: 20px 0 5px 0;	
+	white-space: nowrap;
+}
+
+#siteSpecific li{
+	border-right: 1px solid #0050aa;
+	display:inline;	
+	padding: 0 11px;
+	margin: 0;	
+}
+
+#siteSpecific li.first { padding-left: 0; }
+
+#siteSpecific li.last {
+	border-right: none;
+	padding-right: 0;
+
+}
+
+
+/*-------End New Header Styles--------*/
+
+
+/*-------Footer Styles--------*/
+
+#footer {
+	background-color: #ebebeb;
+	clear: both;
+	color: #000;  
+	font-size: .7em;
+	font-family: verdana, sans-serif;
+	_height: 24px;
+	min-height: 24px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 8px 0; 
+/*	position: relative;*/
+	width: 100%;
+}
+	
+#footer a {	color: #000; }
+
+#footer p { margin:0; }
+
+#footerCenter {
+	margin-left: 195px;
+	margin-right: 195px;
+	text-align: center;
+}
+
+#footerLeft {
+	position: absolute;
+	left: 10px; 
+	width: 190px;
+}	
+	
+#footerRight { 
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	text-align: right;
+	width: 190px;
+}
+
+/*-------End Footer Styles--------*/
+
+ul li label
+{
+    display:inline-block;
+    width:110px;
+}
+
+table
+{
+    font-size: 8pt;
+}
+
+table.Control
+{
+    border-bottom-color : Black;
+    border-right-width : 1px;
+    border-top-color : Black;
+    border-top-width : 1px;
+    border-bottom-width : 1px;
+    border-right-color: Black;
+    border-left-color : Black;
+    border-left-width : 1px;
+}
+
+.Control
+{
+    width : auto;
+    font-size : 8pt;
+}
+
+.HeaderStyle
+{
+    background-color : #F5F5DC;
+    font-size : 8pt;
+}
+
+.inputtable
+{
+    margin-bottom : 3px;
+}
+
+.inputlabel
+{
+ 
+ background:#f6f6f6 url(images/sprite5.png) repeat-x ;
+ text-align:left;
+     border-bottom : 1pt solid;
+    border-left : 1pt solid;
+    border-top : 1pt solid;
+    border-right : 1pt solid;
+    border-color : #e6e6e6;
+ 
+}
+
+.inputdata
+{
+
+    border-bottom : 1pt solid;
+    border-left : 1pt solid;
+    border-top : 1pt solid;
+    border-right : 1pt solid;
+    border-color : #e6e6e6;
+}
+
+
+.pagerBox
+{
+    background: #F6F6F6 none repeat scroll 0 0;
+    border: 1px solid #E6E6E6;
+    clear: both;
+    display: block;
+    margin: 10px 0;
+    padding: 2px 0.7em;
+    vertical-align: middle !important;
+    text-align: right;
+    height:20px;
+}
+
+img
+{
+    border-bottom: 0px;
+    border-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    outline-style: none;
+    outline-color: invert;
+    padding-left: 0px;
+    outline-width: 0px;
+    padding-right: 0px;
+    background: none transparent scroll repeat 0% 0%;
+    font-size: 100%;
+    vertical-align: baseline;
+    border-top: 0px;
+    border-right: 0px;
+    padding-top: 0px;
+}
+IMG.ico_first
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_prev
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_next
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_last
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    padding-bottom: 1px;
+    width: 15px;
+    display: inline;
+    background-repeat: no-repeat;
+    height: 15px;
+    vertical-align: middle;
+}
+IMG.ico_first
+{
+    background-position: 0px -15px;
+}
+IMG.ico_prev
+{
+    background-position: -15px -15px;
+}
+IMG.ico_next
+{
+    background-position: -30px -15px;
+}
+IMG.ico_last
+{
+    background-position: -45px -15px;
+}
+IMG.ico_first:hover
+{
+    background-position: 0px 0px;
+}
+IMG.ico_prev:hover
+{
+    background-position: -15px 0px;
+}
+IMG.ico_next:hover
+{
+    background-position: -30px 0px;
+}
+IMG.ico_last:hover
+{
+    background-position: -45px 0px;
+}
+
+img.ico_first, img.ico_prev, img.ico_next, img.ico_last
+{
+    background-image: url(/images/site_sprite_pageNavBtns.gif);
+    background-repeat: no-repeat;
+    display: inline;
+    height: 15px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+    width: 15px;
+}
+img, a
+{
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+    padding: 0;
+}
+.m
+{
+    vertical-align: middle !important;
+}
+
+.fr
+{
+    float: right;
+}
+
+.nw
+{
+    white-space: nowrap !important;
+}

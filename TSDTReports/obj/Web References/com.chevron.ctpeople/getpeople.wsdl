@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ChevronTexaco.net/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ChevronTexaco.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ChevronTexaco.net/">
+      <s:element name="dsGetPersonByLogonID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogonID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByLogonIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByLogonIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByCAI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CAI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByCAIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByCAIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByEMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByEMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByEMailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndLogonID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogonID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndLogonIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByDomainAndLogonIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndCAI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CAI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndCAIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByDomainAndCAIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndEMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPersonByDomainAndEMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPersonByDomainAndEMailResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPeopleByNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPeopleByCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByDomainAndName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByDomainAndNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPeopleByDomainAndNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByDomainAndCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dsGetPeopleByDomainAndCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsGetPeopleByDomainAndCompanyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="dsGetPersonByLogonIDSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByLogonID" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByLogonIDSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByLogonIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAISoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByCAI" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAISoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByCAIResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByEMail" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByEMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndLogonID" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndLogonIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAISoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndCAI" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAISoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndCAIResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndEMail" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPersonByDomainAndEMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByName" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByCompany" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameSoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByDomainAndName" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameSoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByDomainAndNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByDomainAndCompany" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:dsGetPeopleByDomainAndCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByLogonIDHttpGetIn">
+    <wsdl:part name="LogonID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByLogonIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAIHttpGetIn">
+    <wsdl:part name="CAI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAIHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailHttpGetIn">
+    <wsdl:part name="EMail" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDHttpGetIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="LogonID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAIHttpGetIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="CAI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAIHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailHttpGetIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="EMail" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameHttpGetIn">
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanyHttpGetIn">
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Department" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameHttpGetIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanyHttpGetIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Department" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByLogonIDHttpPostIn">
+    <wsdl:part name="LogonID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByLogonIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAIHttpPostIn">
+    <wsdl:part name="CAI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByCAIHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailHttpPostIn">
+    <wsdl:part name="EMail" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByEMailHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDHttpPostIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="LogonID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndLogonIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAIHttpPostIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="CAI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndCAIHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailHttpPostIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="EMail" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPersonByDomainAndEMailHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameHttpPostIn">
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanyHttpPostIn">
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Department" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByCompanyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameHttpPostIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanyHttpPostIn">
+    <wsdl:part name="Domain" type="s:string" />
+    <wsdl:part name="FirstName" type="s:string" />
+    <wsdl:part name="Initials" type="s:string" />
+    <wsdl:part name="LastName" type="s:string" />
+    <wsdl:part name="Company" type="s:string" />
+    <wsdl:part name="Department" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dsGetPeopleByDomainAndCompanyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="getpeopleSoap">
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Logon ID</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByLogonIDSoapIn" />
+      <wsdl:output message="tns:dsGetPersonByLogonIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their CAI</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByCAISoapIn" />
+      <wsdl:output message="tns:dsGetPersonByCAISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their EMail</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByEMailSoapIn" />
+      <wsdl:output message="tns:dsGetPersonByEMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, Logon ID</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDSoapIn" />
+      <wsdl:output name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, CAI</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAISoapIn" />
+      <wsdl:output name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, EMail</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailSoapIn" />
+      <wsdl:output name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByName" message="tns:dsGetPeopleByNameSoapIn" />
+      <wsdl:output name="dsGetPeopleByName" message="tns:dsGetPeopleByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanySoapIn" />
+      <wsdl:output name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameSoapIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanySoapIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="getpeopleHttpGet">
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Logon ID</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByLogonIDHttpGetIn" />
+      <wsdl:output message="tns:dsGetPersonByLogonIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their CAI</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByCAIHttpGetIn" />
+      <wsdl:output message="tns:dsGetPersonByCAIHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their EMail</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByEMailHttpGetIn" />
+      <wsdl:output message="tns:dsGetPersonByEMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, Logon ID</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDHttpGetIn" />
+      <wsdl:output name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, CAI</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAIHttpGetIn" />
+      <wsdl:output name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAIHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, EMail</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailHttpGetIn" />
+      <wsdl:output name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByName" message="tns:dsGetPeopleByNameHttpGetIn" />
+      <wsdl:output name="dsGetPeopleByName" message="tns:dsGetPeopleByNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanyHttpGetIn" />
+      <wsdl:output name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameHttpGetIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanyHttpGetIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanyHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="getpeopleHttpPost">
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Logon ID</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByLogonIDHttpPostIn" />
+      <wsdl:output message="tns:dsGetPersonByLogonIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their CAI</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByCAIHttpPostIn" />
+      <wsdl:output message="tns:dsGetPersonByCAIHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their EMail</wsdl:documentation>
+      <wsdl:input message="tns:dsGetPersonByEMailHttpPostIn" />
+      <wsdl:output message="tns:dsGetPersonByEMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, Logon ID</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDHttpPostIn" />
+      <wsdl:output name="dsGetPersonByDomainAndLogonID" message="tns:dsGetPersonByDomainAndLogonIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, CAI</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAIHttpPostIn" />
+      <wsdl:output name="dsGetPersonByDomainAndCAI" message="tns:dsGetPersonByDomainAndCAIHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get a Person by their Domain, EMail</wsdl:documentation>
+      <wsdl:input name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailHttpPostIn" />
+      <wsdl:output name="dsGetPersonByDomainAndEMail" message="tns:dsGetPersonByDomainAndEMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByName" message="tns:dsGetPeopleByNameHttpPostIn" />
+      <wsdl:output name="dsGetPeopleByName" message="tns:dsGetPeopleByNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their CT Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanyHttpPostIn" />
+      <wsdl:output name="dsGetPeopleByCompany" message="tns:dsGetPeopleByCompanyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameHttpPostIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndName" message="tns:dsGetPeopleByDomainAndNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get People by their Domain, Name and/or Organization</wsdl:documentation>
+      <wsdl:input name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanyHttpPostIn" />
+      <wsdl:output name="dsGetPeopleByDomainAndCompany" message="tns:dsGetPeopleByDomainAndCompanyHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="getpeopleSoap" type="tns:getpeopleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByLogonID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByCAI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByEMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndLogonID" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndLogonID">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndLogonID">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndCAI" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndCAI">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndCAI">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndEMail" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndEMail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndEMail">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByName" style="document" />
+      <wsdl:input name="dsGetPeopleByName">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByName">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByCompany" style="document" />
+      <wsdl:input name="dsGetPeopleByCompany">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByCompany">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByDomainAndName" style="document" />
+      <wsdl:input name="dsGetPeopleByDomainAndName">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndName">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByDomainAndCompany" style="document" />
+      <wsdl:input name="dsGetPeopleByDomainAndCompany">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndCompany">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="getpeopleSoap12" type="tns:getpeopleSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByLogonID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByCAI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByEMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndLogonID" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndLogonID">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndLogonID">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndCAI" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndCAI">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndCAI">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPersonByDomainAndEMail" style="document" />
+      <wsdl:input name="dsGetPersonByDomainAndEMail">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndEMail">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByName" style="document" />
+      <wsdl:input name="dsGetPeopleByName">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByName">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByCompany" style="document" />
+      <wsdl:input name="dsGetPeopleByCompany">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByCompany">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByDomainAndName" style="document" />
+      <wsdl:input name="dsGetPeopleByDomainAndName">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndName">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <soap12:operation soapAction="http://ChevronTexaco.net/dsGetPeopleByDomainAndCompany" style="document" />
+      <wsdl:input name="dsGetPeopleByDomainAndCompany">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndCompany">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="getpeopleHttpGet" type="tns:getpeopleHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <http:operation location="/dsGetPersonByLogonID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <http:operation location="/dsGetPersonByCAI" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <http:operation location="/dsGetPersonByEMail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <http:operation location="/dsGetPersonByDomainAndLogonID" />
+      <wsdl:input name="dsGetPersonByDomainAndLogonID">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndLogonID">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <http:operation location="/dsGetPersonByDomainAndCAI" />
+      <wsdl:input name="dsGetPersonByDomainAndCAI">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndCAI">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <http:operation location="/dsGetPersonByDomainAndEMail" />
+      <wsdl:input name="dsGetPersonByDomainAndEMail">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndEMail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByName" />
+      <wsdl:input name="dsGetPeopleByName">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByName">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByCompany" />
+      <wsdl:input name="dsGetPeopleByCompany">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByCompany">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByDomainAndName" />
+      <wsdl:input name="dsGetPeopleByDomainAndName">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndName">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByDomainAndCompany" />
+      <wsdl:input name="dsGetPeopleByDomainAndCompany">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndCompany">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="getpeopleHttpPost" type="tns:getpeopleHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <http:operation location="/dsGetPersonByLogonID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <http:operation location="/dsGetPersonByCAI" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <http:operation location="/dsGetPersonByEMail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByLogonID">
+      <http:operation location="/dsGetPersonByDomainAndLogonID" />
+      <wsdl:input name="dsGetPersonByDomainAndLogonID">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndLogonID">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByCAI">
+      <http:operation location="/dsGetPersonByDomainAndCAI" />
+      <wsdl:input name="dsGetPersonByDomainAndCAI">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndCAI">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPersonByEMail">
+      <http:operation location="/dsGetPersonByDomainAndEMail" />
+      <wsdl:input name="dsGetPersonByDomainAndEMail">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPersonByDomainAndEMail">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByName" />
+      <wsdl:input name="dsGetPeopleByName">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByName">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByCompany" />
+      <wsdl:input name="dsGetPeopleByCompany">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByCompany">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByDomainAndName" />
+      <wsdl:input name="dsGetPeopleByDomainAndName">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndName">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dsGetPeople">
+      <http:operation location="/dsGetPeopleByDomainAndCompany" />
+      <wsdl:input name="dsGetPeopleByDomainAndCompany">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="dsGetPeopleByDomainAndCompany">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="getpeople">
+    <wsdl:port name="getpeopleSoap" binding="tns:getpeopleSoap">
+      <soap:address location="http://ctpeople.chevron.com/getpeople.asmx" />
+    </wsdl:port>
+    <wsdl:port name="getpeopleSoap12" binding="tns:getpeopleSoap12">
+      <soap12:address location="http://ctpeople.chevron.com/getpeople.asmx" />
+    </wsdl:port>
+    <wsdl:port name="getpeopleHttpGet" binding="tns:getpeopleHttpGet">
+      <http:address location="http://ctpeople.chevron.com/getpeople.asmx" />
+    </wsdl:port>
+    <wsdl:port name="getpeopleHttpPost" binding="tns:getpeopleHttpPost">
+      <http:address location="http://ctpeople.chevron.com/getpeople.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

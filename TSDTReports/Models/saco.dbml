@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SacoEnterprise" Class="sacoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ZARFNTvSACOENT;Initial Catalog=SacoEnterprise;Persist Security Info=True;User ID=zarfintranet" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SacoEnterpriseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Company" Member="Companies">
+    <Type Name="Company">
+      <Column Name="CompanyId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RiskCompany" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="Company_Employee" Member="Employees" ThisKey="CompanyId" OtherKey="CompanyId" Type="Employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="EmployeeNumber" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BadgeHolderNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Initials" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IdNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ShiftCycleId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="CycleDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DayInCycle" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="PayrollId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="OccupationId" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="EngagementDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IndustryNumber" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="EmployeeCategoryId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="WorkAreaId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="MedicalClassId" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="Contractor" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Callout" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorCount" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="OnShift" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="LastMedicalCheckDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Employee_ClockHistory" Member="ClockHistories" ThisKey="BadgeHolderNumber" OtherKey="BadgeHolderNumber" Type="ClockHistory" />
+      <Association Name="Company_Employee" Member="Company" ThisKey="CompanyId" OtherKey="CompanyId" Type="Company" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClockHistory" Member="ClockHistories">
+    <Type Name="ClockHistory">
+      <Column Name="BadgeHolderNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ResponseCode" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="AccessGranted" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="AccompaniedBadge" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Employee_ClockHistory" Member="Employee" ThisKey="BadgeHolderNumber" OtherKey="BadgeHolderNumber" Type="Employee" IsForeignKey="true" />
+      <Association Name="Reader_ClockHistory" Member="Reader" ThisKey="DeviceId" OtherKey="DeviceId" Type="Reader" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reader" Member="Readers">
+    <Type Name="Reader">
+      <Column Name="DeviceId" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReaderTypeId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ReaderGroupId" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="ToZone" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="AllowOffline" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Controlled" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ControlledTime" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ClearRandomParade" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MealTypeId" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="Emergency" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PromVersion" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RFProtected" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Accompanied" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="AccompaniedDeviceId" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="EquipmentTypeID" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="BiometricsLinkType" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="Reader_ClockHistory" Member="ClockHistories" ThisKey="DeviceId" OtherKey="DeviceId" Type="ClockHistory" />
+    </Type>
+  </Table>
+</Database>

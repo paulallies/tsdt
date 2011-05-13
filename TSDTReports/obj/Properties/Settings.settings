@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TSDTReports.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TSDTReports_com_chevron_ctpeople_getpeople" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ctpeople.chevron.com/getpeople.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

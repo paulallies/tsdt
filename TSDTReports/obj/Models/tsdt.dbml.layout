@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 8.5" name="tsdt">
+  <DataContextMoniker Name="/tsdtDataContext" />
+  <nestedChildShapes>
+    <classShape Id="231ba297-8575-4fad-8077-ffbef8d8c8a4" absoluteBounds="3.5, 3.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87dd2547-9942-44c0-a08b-83aaa0b4efff" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d85c5d9c-00ee-4c98-9610-42ea2e4508ec" absoluteBounds="0.75, 0.875, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_User_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="856a42c8-13cc-4f07-9db6-525c4f2cf931" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="416470bd-6873-4b76-bfa7-4e701328ca47" absoluteBounds="3.5, 6.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_Status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50d0853b-9160-432e-9c5f-7522e1fe9c2e" absoluteBounds="3.515, 6.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eefde991-c87b-47d6-add0-4b91621a3c05" absoluteBounds="9.375, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_TimeSheet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33696423-e646-44e0-85d9-40f4b87d01c4" absoluteBounds="9.39, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 6.125); (4.5 : 5.4631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_Status/tbl_Status_tbl_Project" />
+      <nodes>
+        <classShapeMoniker Id="416470bd-6873-4b76-bfa7-4e701328ca47" />
+        <classShapeMoniker Id="231ba297-8575-4fad-8077-ffbef8d8c8a4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b819268a-5fe6-42a6-a626-1aba1554687c" absoluteBounds="0.5, 2.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_Project_Owner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f43de94-3332-4231-9e38-c90630115d02" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 4.61224659375); (1.5 : 4.61224659375); (1.5 : 3.7612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_Project/tbl_Project_tbl_Project_Owner" />
+      <nodes>
+        <classShapeMoniker Id="231ba297-8575-4fad-8077-ffbef8d8c8a4" />
+        <classShapeMoniker Id="b819268a-5fe6-42a6-a626-1aba1554687c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ab4b8c3d-8720-4690-8c1d-a33badc0c90c" absoluteBounds="6.375, 0.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_Resource" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18e5c9b5-2a88-4fb2-8900-85da753e7ab8" absoluteBounds="6.39, 1.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.375 : 1.56814697265625); (9.375 : 1.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_Resource/tbl_Resource_tbl_TimeSheet" />
+      <nodes>
+        <classShapeMoniker Id="ab4b8c3d-8720-4690-8c1d-a33badc0c90c" />
+        <classShapeMoniker Id="eefde991-c87b-47d6-add0-4b91621a3c05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.48159912109375); (7.375 : 4.48159912109375); (7.375 : 2.39589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_Project/tbl_Project_tbl_Resource" />
+      <nodes>
+        <classShapeMoniker Id="231ba297-8575-4fad-8077-ffbef8d8c8a4" />
+        <classShapeMoniker Id="ab4b8c3d-8720-4690-8c1d-a33badc0c90c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0a103e2e-7e8a-4c3b-9cd0-9ced1a05623f" absoluteBounds="3.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/tsdtDataContext/tbl_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b7a27b9-0f59-4ace-8baf-ec4c5bd9812c" absoluteBounds="3.5149999999999997, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 2.61140055338542); (2.5 : 2.61140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_User/tbl_User_tbl_Project_Owner" />
+      <nodes>
+        <classShapeMoniker Id="0a103e2e-7e8a-4c3b-9cd0-9ced1a05623f" />
+        <classShapeMoniker Id="b819268a-5fe6-42a6-a626-1aba1554687c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.51044840494792); (6.375 : 1.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_User/tbl_User_tbl_Resource" />
+      <nodes>
+        <classShapeMoniker Id="0a103e2e-7e8a-4c3b-9cd0-9ced1a05623f" />
+        <classShapeMoniker Id="ab4b8c3d-8720-4690-8c1d-a33badc0c90c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.47199625651042); (3.5 : 1.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/tsdtDataContext/tbl_User_Role/tbl_User_Role_tbl_User" />
+      <nodes>
+        <classShapeMoniker Id="d85c5d9c-00ee-4c98-9610-42ea2e4508ec" />
+        <classShapeMoniker Id="0a103e2e-7e8a-4c3b-9cd0-9ced1a05623f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

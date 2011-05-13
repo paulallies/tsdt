@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModel dslVersion="1.0.0.0" Name="" xmlns="http://www.tangiblearchitect.com/dsltools/Classes">
+  <UseCaseElements>
+    <actor Name="User">
+      <AssociationTo>
+        <association>
+          <useCaseMoniker Name="//Generate timesheet reports for any 30day time period" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//View/Edit your timesheet for chosen month" />
+        </association>
+      </AssociationTo>
+    </actor>
+    <useCase Name="View/Edit your timesheet for chosen month" />
+    <useCase Name="Generate timesheet reports for any 30day time period" />
+    <useCase Name="View/Edit other all timesheets for chosen month" />
+    <actor Name="Administrator">
+      <AssociationTo>
+        <association>
+          <useCaseMoniker Name="//View/Edit other all timesheets for chosen month" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Add User" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Delete User" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Update User" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Add Project" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Delete Project" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Update Project" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Assign User to Project" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//View/Edit your timesheet for chosen month" />
+        </association>
+        <association>
+          <useCaseMoniker Name="//Generate timesheet reports for any 30day time period" />
+        </association>
+      </AssociationTo>
+    </actor>
+    <useCase Name="Add User" />
+    <useCase Name="Add Project" />
+    <useCase Name="Delete User" />
+    <useCase Name="Update User" />
+    <useCase Name="Delete Project" />
+    <useCase Name="Update Project" />
+    <useCase Name="Assign User to Project" />
+  </UseCaseElements>
+</useCaseModel>

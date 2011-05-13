@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UseCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UseCases1">
+  <useCaseModelMoniker Name="/" />
+  <nestedChildShapes>
+    <actorShape Id="4d9e92a5-20e4-410c-b1d1-32542c2bca39" absoluteBounds="0.875, 2, 0.3, 0.7">
+      <actorMoniker Name="//User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="c8570938-b172-4a82-91b3-703233cf4f45" absoluteBounds="3, 0.5, 3.25, 0.75">
+      <useCaseMoniker Name="//View/Edit your timesheet for chosen month" />
+    </useCaseShape>
+    <useCaseShape Id="73a460c1-9006-4535-bd4e-c64b87d630fd" absoluteBounds="2.875, 1.375, 3.375, 0.75">
+      <useCaseMoniker Name="//Generate timesheet reports for any 30day time period" />
+    </useCaseShape>
+    <useCaseShape Id="da210fbb-c92f-4233-9fdf-dee453bd7c7c" absoluteBounds="2.75, 2.375, 3.5, 0.75">
+      <useCaseMoniker Name="//View/Edit other all timesheets for chosen month" />
+    </useCaseShape>
+    <actorShape Id="1da04b88-8b15-476b-94a4-68f468640a01" absoluteBounds="1, 4.5, 0.3, 0.7">
+      <actorMoniker Name="//Administrator" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="9d3e534c-d05f-4753-8a54-1f5399f4698e" absoluteBounds="2.75, 3.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Add User" />
+    </useCaseShape>
+    <useCaseShape Id="fba444dd-e9a3-4074-ab8c-774ea784759d" absoluteBounds="2.625, 5.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Add Project" />
+    </useCaseShape>
+    <useCaseShape Id="96e671a2-8f70-469d-8590-2f04a2f2bc74" absoluteBounds="4.25, 3.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Delete User" />
+    </useCaseShape>
+    <useCaseShape Id="748461dd-5326-4c24-b357-b07ed7f36325" absoluteBounds="5.75, 3.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Update User" />
+    </useCaseShape>
+    <useCaseShape Id="35c16d51-b2da-4ce2-96c1-16b084268020" absoluteBounds="4.25, 5.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Delete Project" />
+    </useCaseShape>
+    <useCaseShape Id="833b07bd-6d61-4c7c-86e7-85daecb1e9eb" absoluteBounds="5.875, 5.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Update Project" />
+    </useCaseShape>
+    <useCaseShape Id="a87b612d-8389-4d84-9e5e-8b1524c98aea" absoluteBounds="4.25, 4.25, 1.375, 0.75">
+      <useCaseMoniker Name="//Assign User to Project" />
+    </useCaseShape>
+    <associationConnector edgePoints="[(1.175 : 2.47916666666667); (2.6292272759155 : 1.85541722234017 : JumpStart); (2.78239868926863 : 1.78971869945586 : JumpEnd); (2.875 : 1.75)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4d9e92a5-20e4-410c-b1d1-32542c2bca39" />
+        <useCaseShapeMoniker Id="73a460c1-9006-4535-bd4e-c64b87d630fd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.175 : 2.40625); (3.03729898841369 : 0.954884327626984)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="4d9e92a5-20e4-410c-b1d1-32542c2bca39" />
+        <useCaseShapeMoniker Id="c8570938-b172-4a82-91b3-703233cf4f45" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.67708333333333); (2.75 : 2.75)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="da210fbb-c92f-4233-9fdf-dee453bd7c7c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.6875); (2.75 : 3.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="9d3e534c-d05f-4753-8a54-1f5399f4698e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.66666666666667); (4.25 : 3.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="96e671a2-8f70-469d-8590-2f04a2f2bc74" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.67708333333333); (5.75 : 3.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="748461dd-5326-4c24-b357-b07ed7f36325" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.69791666666667); (2.625 : 5.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="fba444dd-e9a3-4074-ab8c-774ea784759d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.6875); (4.25 : 5.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="35c16d51-b2da-4ce2-96c1-16b084268020" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.65625); (5.875 : 5.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="833b07bd-6d61-4c7c-86e7-85daecb1e9eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.66666666666667); (4.25 : 4.625)]" fixedFrom="Caller" fixedTo="NotFixed" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="a87b612d-8389-4d84-9e5e-8b1524c98aea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.65625); (3.10893872518972 : 1.00999175734612)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="c8570938-b172-4a82-91b3-703233cf4f45" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3 : 4.66666666666667); (3.12800995992935 : 1.94750225189379)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="b1fb4d7f-f779-4122-8497-32917894f703">
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="1da04b88-8b15-476b-94a4-68f468640a01" />
+        <useCaseShapeMoniker Id="73a460c1-9006-4535-bd4e-c64b87d630fd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</UseCaseDiagram>

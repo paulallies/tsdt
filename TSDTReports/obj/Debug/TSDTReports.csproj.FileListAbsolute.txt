@@ -1,0 +1,24 @@
+Z:\Projects\TSDTReports\TSDTReports\bin\TSDTReports.dll
+Z:\Projects\TSDTReports\TSDTReports\bin\TSDTReports.pdb
+Z:\Projects\TSDTReports\TSDTReports\obj\Debug\ResolveAssemblyReference.cache
+Z:\Projects\TSDTReports\TSDTReports\obj\Debug\TSDTReports.dll
+Z:\Projects\TSDTReports\TSDTReports\obj\Debug\TSDTReports.pdb
+Z:\Projects\TSDTReports\TSDTReports\bin\ICSharpCode.SharpZipLib.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\TSDTReports.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\TSDTReports.pdb
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\ICSharpCode.SharpZipLib.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\obj\Debug\ResolveAssemblyReference.cache
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\obj\Debug\TSDTReports.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\obj\Debug\TSDTReports.pdb
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.DDF.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.HPSF.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.HSSF.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.POIFS.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.Util.dll
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.DDF.xml
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.HPSF.xml
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.xml
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.POIFS.xml
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.Util.xml
+C:\Chevron Source Code\TSD Timesheet System\Web\TSDTReports\TSDTReports\bin\NPOI.HSSF.xml

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="/" title="Home"  description="Home"  roles="*" />
+            <siteMapNode url="/Timesheet/" title="Timesheets"  description=""  roles="*" />
+
+
+        <siteMapNode url="/##" title="Reports"  description=""  roles="*" >
+           <siteMapNode url="/ProjectReport/" title="Project"  description=""  roles="Administrator, ProjectOwner" />
+            <siteMapNode url="/UserReport/" title="User"  description=""  roles="Administrator, ProjectOwner" />
+            <siteMapNode url="/Report/" title="Timesheet"  description=""  roles="*" />
+
+        </siteMapNode>
+        <siteMapNode url="/#" title="Setup"  description=""  roles="Administrator, ProjectOwner" >
+            <siteMapNode url="/Project/" title="Projects"  description=""  roles="Administrator" />
+            <siteMapNode url="/User/" title="Users"  description=""  roles="Administrator" />
+            <siteMapNode url="/ProjectOwner/" title="Assign Projects to Owners"  description=""  roles="Administrator" />
+            <siteMapNode url="/MyProject/" title="Assign Users to Projects"  description=""  roles="Administrator, ProjectOwner" />
+
+        </siteMapNode>
+
+    </siteMapNode>
+</siteMap>
+

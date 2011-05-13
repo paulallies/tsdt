@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelRoot dslVersion="1.0.0.0" Name="" xmlns="http://www.tangiblearchitect.com/dsltools/ClassDiagrams">
+  <Types>
+    <ModelClass Name="tbl_User_Role" />
+    <ModelClass Name="tbl_user" />
+    <ModelClass Name="tbl_Project_Owner" />
+    <ModelClass Name="tbl_Project" />
+    <ModelClass Name="tbl_Status" />
+  </Types>
+</ModelRoot>

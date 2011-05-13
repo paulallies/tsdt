@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<classDiagramsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ClassDiagrams1">
+  <ModelRootMoniker Name="/" />
+  <nestedChildShapes>
+    <classShape Id="c0918ec1-e08a-4b61-8512-86480ae7f0e8" isExpanded="false" absoluteBounds="0.875, 1.25, 1.5, 0.5">
+      <ModelClassMoniker Name="//tbl_User_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6d1989d-0330-413b-a192-bb863aa6b703" absoluteBounds="0.8899999999999999, 1.7599999999999998, 1.4700000000000002, 0.2493896484375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a41c2453-190b-4b16-a903-781614baaaf3" absoluteBounds="0.89, 2.0193896484375, 1.4700000000000002, 0.2693896484375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b477fe8-df87-407a-9078-22a61767bd11" isExpanded="false" absoluteBounds="0.875, 2, 1.5, 0.5">
+      <ModelClassMoniker Name="//tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81e56936-650c-4f5e-bd50-25a528ad3f30" absoluteBounds="0.8899999999999999, 2.51, 1.4700000000000002, 0.2493896484375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9cfe1b2f-bcf9-4ecf-97ab-411fa10194e1" absoluteBounds="0.8899999999999999, 2.7693896484375, 1.4700000000000002, 0.2493896484375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23652648-7a0b-40b9-ac5b-a5786f6b1de8" isExpanded="false" absoluteBounds="0.875, 4.125, 1.5, 0.5">
+      <ModelClassMoniker Name="//tbl_Project_Owner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1dd522de-8969-4937-bc70-aeb606dc472d" absoluteBounds="0.8899999999999999, 4.635, 1.4700000000000002, 0.2493896484375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="042f0886-fb1c-478b-a7a8-43adc3de9ff5" absoluteBounds="0.8899999999999999, 4.8943896484375, 1.4700000000000002, 0.2493896484375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3794586-1961-4f65-ba09-f7f7ca2c0134" isExpanded="false" absoluteBounds="2.625, 1.25, 1.5, 0.5">
+      <ModelClassMoniker Name="//tbl_Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4677a3e-5857-4aae-9821-c16dc19b50da" absoluteBounds="2.6399999999999997, 1.7599999999999998, 1.4700000000000002, 0.2493896484375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="02f1f357-6d34-443c-b1a5-cc524af4c12b" absoluteBounds="2.6399999999999997, 2.0193896484375, 1.4700000000000002, 0.2493896484375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9a04da4-07d9-4dc3-8c0b-ffc4d88df95c" isExpanded="false" absoluteBounds="2.625, 2, 1.5, 0.5">
+      <ModelClassMoniker Name="//tbl_Status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3106a04-cf39-4a40-941a-e744788aba1a" absoluteBounds="2.6399999999999997, 2.51, 1.4700000000000002, 0.2493896484375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="24b0b5ec-6fd9-485b-b331-98250c56ec9a" absoluteBounds="2.6399999999999997, 2.7693896484374996, 1.4700000000000002, 0.2493896484375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</classDiagramsDiagram>

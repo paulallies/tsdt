@@ -1,0 +1,917 @@
+/* Template5 Custom.css version 1.01*/ 
+
+
+
+/*-------General Styles--------*/
+
+
+body { 
+	color: #666; 
+	font-size: .8em;
+	font-family:verdana,sans-serif;
+	margin-top:0px;
+}
+
+.subHeading{
+  font-weight:bold;
+}
+
+/*td, th { font-size: 0.85em; }*/
+
+dl { font-size: 0.85em; }
+
+/*the default color and size for text on this site.*/
+
+
+/*
+Margin - Controls the spacing to allow for side columns
+min-height - needed if the left or right column is taller then the body. Does not work in IE 
+_height - is a hack. It allows us to set a height that only IE will see.
+*/
+
+#content {
+	margin-left: 182px;
+	margin-right: 182px; 
+	min-height: 470px;
+	_height: 470px;
+}
+
+#content linkarrowblue {
+		list-style-type: none;
+		margin: 0px 0px 3px 0px;
+		padding-left: 15px;
+		background-image:  url("/images/icons/icon_arrow_right_on.gif");
+		background-position: 1px 7px;
+		background-repeat: no-repeat;
+}
+
+#content p { font-size: 0.875em;
+    line-height: 1.4em}
+
+#content ul, #columnRight ul, #columnLeft ul { margin-top: 0px; }
+
+#content ul { margin-left: 25px; }
+
+#content li strong { color: #000;
+ font-weight: normal; }
+
+#content li strong.file { color: #000;
+ font-weight: bold; }
+
+
+ 
+ /*
+
+
+td { line-height: 1.4em !important; }
+
+    
+Controls the font size in the footer. Inherits from the body*/
+#footer { font-size: .7em; }
+
+/*Controls the headline color*/
+h1, h2, h3, h4 { color: #d21034; }
+
+/*Controls heading font size for h1*/
+h1 { font-size: 1.45em;	}
+
+/*Controls heading font size for h2*/
+h2 { font-size: 1.40em; }
+
+/*Controls heading font size for h3*/
+h3 { font-size: 1.38em; }
+
+/*Controls heading font size for h4, h5, and h6*/
+h4, h5, h6 { font-size: 1.00em; }
+
+/*Controls the font size in the header. Inherits from the body*/
+#header { font-size: .8em; }
+
+#home #content { margin-left: 195px; }
+
+/*Sets the height for the momentum band on the home page*/
+
+
+#homePage #momentum { 
+	height: 150px; 
+	margin-right: 0;
+}
+
+
+#homePage #columnLeft, #homePage #columnRight {
+	margin-top: .9em;
+	width: 160px;
+}
+
+
+
+#home #momentum { 
+	height: 50px; 
+	margin-right: 0;
+}
+
+
+#home #columnLeft, #home #columnRight {
+	margin-top: .9em;
+	width: 160px;
+}
+
+
+#page70 #momentum { 
+	height: 70px; 
+	margin-right: 0;
+}
+
+
+#page70 #columnLeft, #page70 #columnRight {
+	margin-top: .9em;
+	width: 160px;
+}
+
+
+
+#columnLeft strong, #columnRight strong { 
+	color: #494d4c;
+	display: block;
+	font-size: 1.15em;
+	margin: 0;
+	padding: 0 0 .6em 0;
+}
+
+#columnLeft img { padding: 0 0 .6em 0; }
+
+#columnRight {
+	margin-top: 10px;
+	width: 160px;
+}
+
+#columnRight img { 
+	float: left; 
+	padding: 0 .3em;
+}
+
+/*The color that will expand to the right of the momentum band */
+
+#momentum { 
+        font-size:18pt;
+        font-family:Verdana;
+	background:  #009dd9; 
+	margin-right: 0px;
+	color: #ffffff;
+}
+
+
+/*Sets the height for the momentum band on every page except for the home page.*/
+#momentum { height: 50px; }
+
+/*Controls the width of the page*/
+#pageConstraints { 
+  width: 900px;
+}
+
+#pageConstraints_wide { 
+        width: 100%; 
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 700px;
+	position: relative;
+	text-align: left;
+}
+
+
+/* for pages without a left nav we need to remove the left margin from the monetum band*/
+#page_NoLeftNav #momentum { margin-left: 0;}
+
+
+
+/* for pages without a left nav we need to remove the left margin from the content band*/
+#page_NoLeftNav #content { 
+	_height: 420px;
+	margin-right: 200px; 
+	min-height: 420px;
+	margin-left: 0px;
+}
+
+
+/* for pages without a right nav we need to remove the left margin from the monetum band*/
+#page_NoRightNav #momentum { margin-right: 0;}
+
+/* for pages without a right nav we need to remove the left margin from the content band*/
+#page_NoRightNav #content {
+	_height: 420px;
+	margin-right: 0px; 
+	min-height: 420px;
+	margin-left: 195px;
+	}
+
+
+#page_NoRightNav #columnRight {
+	margin-top: .9em;
+	width: 0px;
+	position: absolute; 
+	right: 0;	
+}
+
+#page_NoRightNav #columnLeft {
+	margin-top: .9em;
+	width: 160px;
+}	
+	
+#home #columnLeft {
+	margin-top: .9em;
+	width: 160px;
+}
+
+/* for pages with ONE column we need to remove the left and right margins from the monetum band*/
+#page_1column #momentum { margin-right: 0; margin-left: 0;}
+
+/* for pages with ONE column we need to remove the left and right margins from the content band*/
+#page_1column #content { margin-right: 0; margin-left: 0; _height:0px;}
+
+
+
+
+
+/*Height here needs to be the same size as the height of your sitename image for vertical alignment to work in firefox.*/
+#siteNamePositioner { 
+height: 50px; 
+left:10px;
+color: #F46D1F;
+font-size : 14pt;
+font-weight:bolder;
+
+}
+
+/*This number tells the browser what size to allow to the left for your site name image*/
+#siteSpecific { margin-left: 128px; }
+
+
+
+
+.quicklinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	color: #333;
+	line-height: 1.4em;
+	width: 100%;
+	margin: 0px 0px -10px 0px;
+	padding: 10px 10px 0px 10px;
+	background-color: #ebe9e6;
+}
+
+#columnRight > .quicklinks { margin-left: -20px; padding-bottom: 2px; }
+
+
+.whatsNew {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	color: #333;
+	line-height: 1.4em;
+	width: 100%;
+	margin: 0px 0px -10px 0px;
+	padding: 10px 10px 0px 10px;
+	background-color: #e0f3fb;
+}
+
+#columnLeft > .whatsNew { margin-right: -20px; padding-bottom: 2px }
+
+
+.xslTarget li { 
+		list-style-type: none;
+		margin: 0px 0px 3px 0px;
+		padding-left: 15px;
+		background-image:  url("/images/icons/icon_arrow_right_on.gif");
+		background-position: 1px 7px;
+		background-repeat: no-repeat;
+}
+
+
+
+
+
+.linkarrowblue {
+		list-style-type: none;
+		margin: 0px 0px 3px -40px;
+		padding-left: 15px;
+		background-image:  url("/images/icons/icon_arrow_right_on.gif");
+		background-position: 1px 7px;
+		background-repeat: no-repeat;
+}
+
+.linkPDF {
+		list-style-type: none;
+		margin: 0px 0px 3px -40px;
+		padding-left: 20px;
+		background-image:  url("/images/icons/icon_pdf.gif");
+		background-position: 1px 0px;
+		background-repeat: no-repeat;
+		}
+.linkExcel {
+		list-style-type: none;
+		margin: 0px 0px 3px -40px;
+		padding-left: 20px;
+		background-image:  url("/images/icons/icon_excel.gif");
+		background-position: 1px 0px;
+		background-repeat: no-repeat;
+		}
+		
+.linkWord {
+		list-style-type: none;
+		margin: 0px 0px 3px -40px;
+		padding-left: 20px;
+		background-image:  url("/images/icons/icon_word.gif");
+		background-position: 1px 0px;
+		background-repeat: no-repeat;
+		}		
+
+.linkFolder {
+		list-style-type: none;
+		margin: 0px 0px 3px -40px;
+		padding-left: 20px;
+		background-image:  url("/images/icons/folder_trans.gif");
+		background-position: 1px 1px;
+		background-repeat: no-repeat;
+		}
+
+
+
+
+
+/*-------End General Styles--------*/
+
+/*Size and Color of the bar below the whole navigation*/
+#sideNav { 
+	border-top: 2px solid #aaafb4;
+	margin-top: 0; 
+} 
+
+#sideNav li.last { border-bottom: 2px solid #aaafb4; }
+
+/*Background color of the navigation*/
+#sideNav a, 
+#sideNav a:visited {	background-color: #ebe9e6; }
+
+/*This color has to match the headline color used in the site name*/
+#sideNav a.currentPage,
+#sideNav a:link.currentPage, 
+#sideNav a:hover.currentPage, 
+#sideNav a:visited.currentPage,
+#sideNav a:active.currentPage, 
+#sideNav a:focus.currentPage, 
+#sideNav a:hover.currentPage,
+#topNav li ul a:link.currentPage, 
+#topNav li ul a:hover.currentPage, 
+#topNav li ul a:visited.currentPage,
+#topNav li ul a:active.currentPage, 
+#topNav li ul a:focus.currentPage, 
+#topNav li ul a:hover.currentPage {
+	color: #494d4c;	
+}
+
+	
+/*-------Top Nav Styles--------*/   
+
+/*This color has to match the headline color used in the site name*/
+#textTopNav a:link.currentPage, 
+#textTopNav a:hover.currentPage, 
+#textTopNav a:visited.currentPage,
+#textTopNav A:active.currentPage, 
+#textTopNav A:focus.currentPage, 
+#textTopNav A:hover.currentPage {
+	color: #494d4c;
+}
+/*-------End Top Nav Styles--------*/
+
+
+
+/* BLUE CONTENT MODULES (content .moduleWide)
+-------------------------------------------------------------------- */
+
+#content div.moduleWideBLUE {
+	border-top: 5px solid #009dd9;
+	padding-bottom: 1px;
+	line-height: 1.3em;
+}
+#content div.moduleWideBLUE h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: .85em;
+	color: #fff;
+	background: #0050aa;
+	border-top: 1px solid #fff;
+	padding: 0 0 0 15px;
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+div.moduleWideBLUE div.heading {
+	position: relative;
+}
+#content div.moduleWideBLUE div.heading span {
+	font-weight: normal;
+	font-size: .85em;
+	position: absolute;
+	right: 11px;
+	top: -1px;
+}
+#content div.moduleWideBLUE div.heading span a,
+#content div.moduleWideBLUE div.heading span a:visited {
+	color: #fff;
+}
+#content div.moduleWideBLUE div.heading span a:hover {
+	color: #333;
+}
+#content div.moduleWideBLUE h3 a {
+	color: #333;
+}
+#content div.moduleWideBLUE div.heading span img {
+	position: relative;
+	top: 5px;
+	padding-left: 3px;
+}
+
+/* Module contents styling */
+
+#content div.moduleWideBLUE ul {
+  font-size: .85em;
+  margin: 0 0 0 15px !important;
+}
+
+
+#content div.moduleWideBLUE ul { padding-bottom: 15px; }
+
+#content div.moduleWideBLUE p { margin-left:10px; margin-bottom: 5; padding-top: 1px;margin-right:10px; }
+#content div.moduleWideBLUE h3 {
+  margin: 0 0 0 15px;
+  display: inline;
+}
+
+
+/* CONTENT MODULES (content .moduleWide)
+-------------------------------------------------------------------- */
+
+#content div.moduleWide {
+	border-top: 5px solid #f46d1f;
+	padding-bottom: 1px;
+	line-height: 1.3em;
+}
+#content div.moduleWide h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: .85em;
+	color: #fff;
+	background: #5d5946;
+	border-top: 1px solid #fff;
+	padding: 0 0 0 15px;
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+div.moduleWide div.heading {
+	position: relative;
+}
+#content div.moduleWide div.heading span {
+	font-weight: normal;
+	font-size: .85em;
+	position: absolute;
+	right: 11px;
+	top: -1px;
+}
+#content div.moduleWide div.heading span a,
+#content div.moduleWide div.heading span a:visited {
+	color: #fff;
+}
+#content div.moduleWide div.heading span a:hover {
+	color: #333;
+}
+#content div.moduleWide h3 a {
+	color: #333;
+}
+#content div.moduleWide div.heading span img {
+	position: relative;
+	top: 5px;
+	padding-left: 3px;
+}
+
+/* Module contents styling */
+#content div.moduleWide p,
+#content div.moduleWide ul {
+  font-size: .85em;
+  margin: 0 0 0 15px !important;
+}
+#content div.moduleWide ul { padding-bottom: 15px; }
+
+#content div.moduleWide p { margin-bottom: 0; padding-top: 1px; }
+#content div.moduleWide h3 {
+  margin: 0 0 0 15px;
+  display: inline;
+}
+
+#content div.moduleWide #factivaimg {
+	margin: -3px 4px 0 0;
+	float: right;
+}
+
+
+
+
+/*-------BEGIN HAWAII CUSTOM Styles--------*/
+.card  { background-color: #FFFFFF;
+         layer-background-color: #FFFFFF;
+         border: 1px solid #000000; 
+         padding:15;
+         overflow:hidden; }
+
+.oeBody { margin-left:15px;}
+
+
+
+
+         
+/*table {border-collapse: collapse;}*/
+
+.fillOrange{background-color: #FF9933;}
+.txtBlackBold {color: #000000; line-height: 1.45em; font-weight: bold;}
+
+.txtRedBold                     {color: #ff0000;  font-family: verdana, arial , sans-serif;  line-height: 1.45em; font-weight: bold;}  
+.txtRedBold A:Link              {color: #ff0000;  font-family: verdana, arial , sans-serif;  line-height: 1.45em; font-weight: bold;}  
+.txtRedBold A:Active            {color: #ff0000;  font-family: verdana, arial , sans-serif;  line-height: 1.45em; font-weight: bold;}  
+.txtRedBold A:Visited           {color: #ff0000;  font-family: verdana, arial , sans-serif;  line-height: 1.45em; font-weight: bold;} 
+
+
+.fillGray1                      {background-color: #EDEDED; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray1 A:Link               {background-color: #EDEDED; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray1 A:Active             {background-color: #EDEDED; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray1 A:Visited            {background-color: #EDEDED; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+
+.fillBlue1                      {background-color: #DEE7F8; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillBlue1 A:Link               {background-color: #DEE7F8; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillBlue1 A:Active             {background-color: #DEE7F8; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+fillBlue1 A:Visited             {background-color: #DEE7F8; color: #000066; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+
+.fillGray                       {background-color: #666666; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray A:Link                {background-color: #666666; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray A:Active              {background-color: #666666; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+.fillGray A:Visited             {background-color: #666666; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}
+
+.fillRed                        {background-color: #ff0000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillRed A:Link                 {background-color: #ff0000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillRed A:Active               {background-color: #ff0000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillRed A:Visited              {background-color: #ff0000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+.fillBrightYellow               {background-color: #ffff00; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBrightYellow A:Link        {background-color: #ffff00; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBrightYellow A:Active      {background-color: #ffff00; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBrightYellow A:Visited     {background-color: #ffff00; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+
+.fillGreen                      {background-color: #339900; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillGreen A:Link               {background-color: #339900; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillGreen A:Active             {background-color: #339900; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillGreen A:Visited            {background-color: #339900; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+.fillYellow                     {background-color: #fcd848; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillYellow A:Link              {background-color: #fcd848; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillYellow A:Active            {background-color: #fcd848; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillYellow A:Visited           {background-color: #fcd848; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+.fillLightGray                  {background-color: #cccccc; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillLightGray A:Link           {background-color: #cccccc; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillLightGray A:Active         {background-color: #cccccc; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillLightGray A:Visited        {background-color: #cccccc; color: #000000; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+
+.fillBlue                       {background-color: #0033cc; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBlue A:Link                {background-color: #0033cc; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBlue A:Active              {background-color: #0033cc; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;}  
+.fillBlue A:Visited             {background-color: #0033cc; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+.fillBlack                      {background-color: #000000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+.fillBlack A:Link               {background-color: #000000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+.fillBlack A:Active             {background-color: #000000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+.fillBlack A:Visited            {background-color: #000000; color: #ffffff; font-family: verdana, arial , sans-serif;  line-height: 1.45em;} 
+
+
+/* form elements */
+
+
+.styleTxtArea                           {font-family: verdana, arial , sans-serif; font-size: 1em}
+.styleTxtAreaYellow                     {font-family: verdana, arial , sans-serif; font-size: 1em; background-color: #fcd848}
+.styleTxtBox                            {font-family: verdana, arial , sans-serif; font-size: 1em}
+.styleTxtBoxSmall                       {width: 80px;  height: 20px; font-family: verdana, arial , sans-serif; font-size: 1em}
+.styleSelect                            {height: 20px; font-family: verdana, arial , sans-serif; font-size: 1em}
+.styleSelectSmall                       {width: 100px; height: 20px; font-family: verdana, arial , sans-serif; font-size: 1em}
+
+.styleSelectVerySmall           {width: 50px; height: 20px; font-family: verdana, arial , sans-serif; font-size: 1em}
+.styleButton                    {color: #ffffff; background-color: #000000; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; }   
+
+.styleDkBlueButton              {color: #ffffff; background-color: #000066; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff; }   
+.styleDkBlueButtonOver          {color: #ffffff; background-color: #ff0000; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+          
+.styleButtonRed                 {color: #ffffff; background-color: #ff0000; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+.styleButtonRedOver             {color: #ff0000; background-color: #ffffff; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+ 
+.styleButtonLtBlue              {color: #ffffff; background-color: #6699cc; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+.styleButtonLtBlueOver          {color: #ffffff; background-color: #ff0000; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+
+.styleButtonDkGray              {color: #ffffff; background-color: #666666; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}   
+.styleButtonDkGrayOver          {color: #ffffff; background-color: #ff0000; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}     
+
+.styleButtonGreen 		    { color: #ffffff; background-color: #669900; font-family: verdana, arial , sans-serif; font-size: 1em; font-weight: bold; padding: 1px; border-style: solid; border-width: 1px; border-color: #ffffff #000000 #000000 #ffffff;}
+
+
+/* end form elements */ 
+
+/*-------END HAWAII CUSTOM Styles--------*/
+
+
+
+/* FEATURED LINKS (featured company links in left sidebar)
+-------------------------------------------------------------------- */
+
+#featuredLinks h2 {
+	font-size: .85em;
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+	background: #EBE9E6;
+	padding: 0 0 0 12px;
+	border-bottom: 3px solid #6EA20A;
+}
+#featuredLinks ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#featuredLinks ul li {
+	margin: 1px 0 3px 0;
+	border-bottom: 2px solid #D1D0CC;
+	background: #EBE9E6;
+}
+#featuredLinks ul li a {
+    font-size: .85em;
+	font-weight: bold; 
+	color: #333;
+	height: 18px;
+	line-height: 18px;
+	text-decoration: none;
+	padding-left: 15px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 10px 2px;
+}
+#featuredLinks ul li a#flHuman {
+}
+#featuredLinks ul li a#flOperation {
+}
+#featuredLinks ul li a#flMagazine {
+}
+#featuredLinks ul li a#flStrategy {
+}
+#featuredLinks ul li a#flUpstream {
+}
+#featuredLinks ul li a#flDownstream {
+}
+#featuredLinks ul li a#flGas {
+}
+#featuredLinks ul li a#flTV {
+}
+/* Hover needs to be set specifically for each link, so it overwrites the background color */
+#featuredLinks ul li a#flHuman:hover,
+#featuredLinks ul li a#flOperation:hover,
+#featuredLinks ul li a#flMagazine:hover,
+#featuredLinks ul li a#flStrategy:hover,
+#featuredLinks ul li a#flUpstream:hover,
+#featuredLinks ul li a#flDownstream:hover,
+#featuredLinks ul li a#flGas:hover, 
+#featuredLinks ul li a#flTV:hover{
+	color: #008073;
+	background-color: #EFF4E3;
+	background-position: 10px -52px;
+}
+
+
+
+/* SIDEBAR MODULES (columnLeft -> .module | columnRight -> .module)
+-------------------------------------------------------------------- */
+
+.module a:visited {color: #0050aa;}
+
+div#sea {
+	margin-top: 11px;
+	border-top: 5px solid #009dd9;
+	background: #e0f3fb;
+	padding-bottom: 1px;
+	font-size: .85em;
+}
+
+div#sea h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	background: #0050aa;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 10px;
+	width:175px;
+}
+
+div#stone {
+	margin-top: 11px;
+	border-top: 5px solid #8e7e75;
+	background: #ebe9e6;
+	padding-bottom: 1px;
+	font-size: .85em;
+}
+
+div#stone h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	background: #494d4c;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 10px;
+	width:175px;
+}
+
+div#earth {
+	margin-top: 11px;
+	border-top: 5px solid #6ea20a;
+	background: #eff4e3;
+	padding-bottom: 1px;
+	font-size: .85em;
+}
+
+div#earth h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	background: #008073;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 10px;
+	width:175px;
+}
+
+div#sand {
+	margin-top: 11px;
+	border-top: 5px solid #f46d1f;
+	background: #ebe9e6;
+	padding-bottom: 1px;
+	font-size: .85em;
+}
+
+div#sand h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	background: #5d5946;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 10px;
+	width:175px;
+}
+
+div.module {
+	margin-top: 11px;
+	border-top: 5px solid #009dd9;
+	background: #ebe9e6;
+	padding-bottom: 1px;
+	font-size: .85em;
+}
+
+div.module h2 {
+	height: 22px;
+	line-height: 22px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	background: #0050aa;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	margin-bottom: 10px;
+	width:175px;
+}
+
+
+div.module div.heading {
+	position: relative;
+}
+div.module div.heading span {
+	font-weight: normal;
+	position: absolute;
+	right: 11px;
+	top: -1px;
+}
+div.module div.heading span a,
+div.module div.heading span a:visited {
+	color: #fff;
+}
+div.module div.heading span a:hover {
+	color: #333;
+}
+div.module div.heading span img {
+	position: relative;
+	top: 5px;
+	padding-left: 3px;
+}
+div.module p,
+div.module dl {
+	padding: 0 4px 0 15px;
+}
+
+div.module ul {
+               margin: 0px 0px 3px 0px;
+}
+div.module ul li{
+		list-style-type: none;
+		margin: 0px 0px 13px 0px;
+		padding-left: 15px;
+		background-image:  url("/images/icons/icon_arrow_right_on.gif");
+		background-position: 3px 3px;
+		background-repeat: no-repeat;
+}
+
+/* SPECIFIC MODULES
+-------------------------------------------------------------------- */
+
+/* [MODULE] -> My Links */
+div#myLinks ul {
+	list-style-type: none;
+	line-height: 1.7em;
+	margin: 0 0 11px 0;
+}
+div#myLinks ul li {
+	color: #000000;
+	background: url(/images/icons/icon_arrow_right_on.gif) no-repeat 0 6px;
+	padding: 0px 3px 0px 12px;
+}
+div#myLinks ul li a {
+	text-decoration: underline;
+}
+div#myLinks ul li a:hover {
+	text-decoration: underline;
+}
+
+/* [MODULE] -> Favorite Photo */
+div#favoritePhoto img {
+	margin: 0px 0px 0px 0px;
+}
+
+/* SPECIFIC MODULES
+-------------------------------------------------------------------- */
+
+/* [MODULE] -> myTurnaround */
+div#myTurnaround table {
+	background-color: #FFFFFF;
+}
+
+div#myTurnaround table tr th {
+	/* background-color: #8e7e75; */
+	background-color: #8e7e75; 
+	color: #FFFFFF;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+div#myTurnaround table tr td {
+	background-color: #EFF3E4;
+	margin: 0px 0px 0px 0px;
+}
+
+/* [MODULE] -> myTurnaround2 */
+div#myTurnaround2 table {
+	background-color: #FFFFFF;
+	border-top: 1px solid #6ea20a;  
+	border-left: 1px solid #6ea20a; 
+	border-bottom: 1px solid #6ea20a;
+}
+
+div#myTurnaround2 table tr th {
+	background-color: #EFF3E4; 
+	border-right: 1px solid #6ea20a;
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+div#myTurnaround2 table tr td {
+	background-color: #EFF3E4;
+	border-right: 1px solid #6ea20a; 
+	border-top: 1px solid #6ea20a; 
+	margin: 0px 0px 0px 0px;
+}
